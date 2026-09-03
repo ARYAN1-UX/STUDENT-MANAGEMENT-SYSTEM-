@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Student Management System</h1>
+
+        <p>Login to continue</p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <label>Login As</label>
+
+            <select id="role">
+
+                <option value="admin">Admin</option>
+
+                <option value="teacher">Teacher</option>
+
+                <option value="student">Student</option>
+
+            </select>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
