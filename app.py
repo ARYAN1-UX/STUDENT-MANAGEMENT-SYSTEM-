@@ -13,9 +13,19 @@ def home():
     return send_from_directory(BASE_DIR, "login.html")
 
 
+@app.route("/dashboard")
+def dashboard():
+    return send_from_directory(BASE_DIR, "dashboard.html")
+
+
 @app.route("/style.css")
 def serve_css():
     return send_from_directory(BASE_DIR, "style.css")
+
+
+@app.route("/dashboard.css")
+def serve_dashboard_css():
+    return send_from_directory(BASE_DIR, "dashboard.css")
 
 
 @app.route("/script.js")

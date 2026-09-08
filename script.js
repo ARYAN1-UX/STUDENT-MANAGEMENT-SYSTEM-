@@ -51,8 +51,7 @@ loginForm.addEventListener("submit", async function(event) {
 
         if (data.success) {
 
-            console.log("Login successful");
-
+            window.location.href = "/dashboard";
         }
 
     }
